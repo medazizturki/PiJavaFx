@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="701.0" prefWidth="759.0" style="-fx-background-color: #05335e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficherParticipationController">
+   <children>
+      <Button fx:id="supprimerPartBtn" layoutX="502.0" layoutY="155.0" mnemonicParsing="false" onAction="#supprimerParticipation" style="-fx-background-radius: 30;" text="supprimer participation" />
+      <TextField fx:id="idread" layoutX="266.0" layoutY="458.0" prefHeight="26.0" prefWidth="58.0" />
+      <TextField fx:id="iduserField" layoutX="266.0" layoutY="491.0" />
+      <TextField fx:id="ideventField" layoutX="429.0" layoutY="491.0" />
+      <TextField fx:id="datepartField1" layoutX="596.0" layoutY="491.0" />
+      <DatePicker fx:id="datepartField" layoutX="266.0" layoutY="542.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="327.0" layoutY="38.0" prefHeight="40.0" prefWidth="294.0" text="la liste de partitions" textFill="#fffdfd">
+         <font>
+            <Font name="Cambria Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableParticipation" layoutX="267.0" layoutY="196.0" onMouseClicked="#choisirParticipation" prefHeight="230.0" prefWidth="469.0" style="-fx-background-color: #a1a1a1a;">
+        <columns>
+          <TableColumn fx:id="iduserTv" prefWidth="94.39996337890625" text="id utilisateur" />
+          <TableColumn fx:id="ideventTv" prefWidth="88.0" text="id evenement" />
+            <TableColumn fx:id="datePartTv" prefWidth="124.79998779296875" text="date participation" />
+        </columns>
+      </TableView>
+      <Button layoutX="27.0" layoutY="25.0" mnemonicParsing="false" onAction="#go_to_back" text="Retour" />
+      <TextField fx:id="idEventFIND" layoutX="429.0" layoutY="542.0" onKeyPressed="#findPart" />
+      <Button fx:id="ExportPDF" layoutX="648.0" layoutY="155.0" mnemonicParsing="false" onAction="#ExportPDF" prefHeight="25.0" prefWidth="88.0" text="Export PDF" />
+      <VBox layoutX="3.0" layoutY="1.0" prefHeight="700.0" prefWidth="208.0" style="-fx-background-color: #F8F9FC;">
+         <children>
+            <AnchorPane prefHeight="701.0" prefWidth="221.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="17.0" layoutY="46.0" prefHeight="64.0" prefWidth="200.0" style="-fx-background-color: #E0DFF0;" styleClass="search-button" stylesheets="@../../../SOUND-ON-Desktop/src/values/style.css">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="51.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" x="100.0" y="2.0">
+                           <image>
+                              <Image url="@188427.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="42.0" prefWidth="110.0" text="    ado_doc" textFill="#2f62ee">
+                           <font>
+                              <Font name="Harrington" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="40.0" />
+                     </padding>
+                  </HBox>
+                  <Button fx:id="Retourevent" layoutX="36.0" layoutY="613.0" mnemonicParsing="false" onAction="#Retourpageevent" prefHeight="26.0" prefWidth="88.0" text="Retour" />
+               </children></AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#recherche" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #05335e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RessourceController">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="823.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/ttytt.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tf_id" layoutX="453.0" layoutY="455.0" />
+      <TextField fx:id="tf_nom" layoutX="453.0" layoutY="636.0" />
+      <TextField fx:id="tf_dispo" layoutX="453.0" layoutY="582.0" />
+      <TextField fx:id="tf_type" layoutX="453.0" layoutY="518.0" />
+      <Label layoutX="342.0" layoutY="639.0" text="nom" textFill="#fbfdff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="315.0" layoutY="585.0" text="disponibilité" textFill="#fbfdff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="342.0" layoutY="521.0" text="type" textFill="#fbfdff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="btn_ajout" layoutX="632.0" layoutY="578.0" mnemonicParsing="false" onAction="#click_on_ajouter" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #5499C7;" text="Ajouter" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="afficher_tab" layoutX="242.0" layoutY="138.0" onMouseClicked="#edp1" prefHeight="205.0" prefWidth="605.0" style="-fx-background-color: #F6F1F1;">
+        <columns>
+          <TableColumn fx:id="fx_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fx_type" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="fx_dispo" prefWidth="75.0" text="dispo" />
+            <TableColumn fx:id="fx_nom" prefWidth="75.0" text="nom" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_supp" layoutX="630.0" layoutY="518.0" mnemonicParsing="false" onAction="#click_on_supprimer" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #5499C7;" text="Supprimer" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_modifier" layoutX="624.0" layoutY="455.0" mnemonicParsing="false" onAction="#click_on_modifier" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #5499C7;" text="Modifier" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="rech" layoutX="594.0" layoutY="357.0" promptText="rechercher" />
+      <Button fx:id="btn_ajout1" layoutX="633.0" layoutY="636.0" mnemonicParsing="false" onAction="#click_on_SMS" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #5499C7;" text="SMS" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="53.0" fitWidth="65.0" layoutX="752.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/logo.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchField" layoutX="594.0" layoutY="397.0" />
+      <VBox layoutY="7.0" prefHeight="700.0" prefWidth="221.0" style="-fx-background-color: #F8F9FC;">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="221.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="630.0" mnemonicParsing="false" onAction="#retour" prefHeight="6.0" prefWidth="175.0" text="retour ">
+                     <font>
+                        <Font name="Edwardian Script ITC" size="28.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="131.0" fitWidth="126.0" layoutX="48.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@334882197_6506967289321661_9163013156950975212_n.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #05335e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficherEvenementController">
+   <children>
+      <Label layoutX="361.0" layoutY="14.0" prefHeight="43.0" prefWidth="310.0" text="LA LISTE DE EVENEMENTS" textFill="#f5f2f2">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="190.0" layoutY="165.0" prefHeight="448.0" prefWidth="716.0" style="-fx-background-color: #FFE4B5;">
+         <content>
+            <GridPane fx:id="gridEvent" prefHeight="449.0" prefWidth="745.0" style="-fx-background-color: # #a1a1a1aD1F2EB;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="383.1999877929687" minHeight="-Infinity" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <HBox layoutX="530.0" layoutY="88.0" prefHeight="27.0" prefWidth="181.0" />
+      <Button layoutX="653.0" layoutY="80.0" mnemonicParsing="false" onAction="#trierEvenement" prefHeight="34.0" prefWidth="240.0" text="Trier les Evenement" />
+      <TextField fx:id="chercherEventField" alignment="TOP_LEFT" layoutX="438.0" layoutY="82.0" onKeyPressed="#rechercherevenement" prefHeight="34.0" prefWidth="178.0" promptText="donner le nom d'evenement" style="-fx-background-radius: 30;" />
+      <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="654.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2309912.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Evenementb" layoutX="23.0" layoutY="181.0" mnemonicParsing="false" onAction="#Evenement" prefHeight="40.0" prefWidth="149.0" text="Evenement" textFill="#1b1a1a">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Rendezvousb" layoutX="23.0" layoutY="244.0" mnemonicParsing="false" onAction="#Rendezvous" prefHeight="40.0" prefWidth="149.0" text="Rendez-vous">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reservationb" layoutX="23.0" layoutY="310.0" mnemonicParsing="false" onAction="#Profil" prefHeight="40.0" prefWidth="149.0" text="Reservation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Ressourceb" layoutX="23.0" layoutY="376.0" mnemonicParsing="false" onAction="#Ressource" prefHeight="40.0" prefWidth="149.0" text="Ressource">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Offreb" layoutX="23.0" layoutY="441.0" mnemonicParsing="false" onAction="#offre" prefHeight="40.0" prefWidth="149.0" text="Offre">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reclamation1" layoutX="23.0" layoutY="505.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="17.0" prefWidth="149.0" text="Reclamation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#Retour" prefHeight="27.0" prefWidth="83.0" text="Retour" />
+      <ImageView fitHeight="82.0" fitWidth="108.0" layoutX="57.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@334882197_6506967289321661_9163013156950975212_n.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

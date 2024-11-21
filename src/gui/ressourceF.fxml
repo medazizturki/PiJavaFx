@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #05335e;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RessourceFController">
+    <stylesheets>
+        <URL value="@ressourcef.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="afficher_tab" layoutX="229.0" layoutY="95.0" prefHeight="280.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="fx_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fx_type" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="fx_dispo" prefWidth="75.0" text="dispo" />
+            <TableColumn fx:id="fx_nom" prefWidth="75.0" text="nom" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="459.0" layoutY="24.0" prefHeight="52.0" prefWidth="207.0" style="-fx-background-color: #E0DFF0;" styleClass="search-button" stylesheets="@../../../SOUND-ON-Desktop/src/values/style.css">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="51.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" x="100.0" y="2.0">
+               <image>
+                  <Image url="@188427.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label prefHeight="42.0" prefWidth="110.0" text="    ado_doc" textFill="#2f62ee">
+               <font>
+                  <Font name="Harrington" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="40.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="Evenementb" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#Evenement" prefHeight="40.0" prefWidth="136.0" text="Evenement" textFill="#1b1a1a">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Rendezvousb" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" onAction="#Rendezvous" prefHeight="40.0" prefWidth="136.0" text="Rendez-vous">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reservationb" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#Profil" prefHeight="34.0" prefWidth="136.0" text="Reservation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Ressourceb" layoutX="14.0" layoutY="214.0" mnemonicParsing="false" onAction="#Ressource" prefHeight="40.0" prefWidth="136.0" text="Ressource">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Offreb" layoutX="14.0" layoutY="279.0" mnemonicParsing="false" onAction="#offre" prefHeight="40.0" prefWidth="136.0" text="Offre">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reclamation1" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="40.0" prefWidth="136.0" text="Reclamation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

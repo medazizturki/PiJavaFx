@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FrontCrontroller">
+   <children>
+      <AnchorPane prefHeight="616.0" prefWidth="993.0" style="-fx-background-color: #030307; -fx-background-radius: 15;">
+         <children>
+            <StackPane layoutX="73.0" prefHeight="616.0" prefWidth="919.0">
+               <children>
+                  <Pane fx:id="pnl_Reclamation" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: fff;">
+                     <children>
+                        <ImageView fitHeight="616.0" fitWidth="919.0" pickOnBounds="true" preserveRatio="true" />
+                        <AnchorPane layoutX="-27.0" layoutY="72.0" prefHeight="530.0" prefWidth="819.0" style="-fx-background-color: fff;" stylesheets="@../css/fullpackstyling2.css">
+                           <children>
+                              <TableView fx:id="tab_Reclamation" layoutX="88.0" layoutY="81.0" prefHeight="228.0" prefWidth="693.0">
+                                 <columns>
+                                    <TableColumn fx:id="col_id_rec" prefWidth="37.0" text="#" />
+                                    <TableColumn fx:id="col_nom_reclamation" prefWidth="127.0" text="nom_reclamation" />
+                                    <TableColumn fx:id="col_prenom_reclamation" prefWidth="120.0" text="prenom_reclamation" />
+                                    <TableColumn fx:id="col_destination_reclamation" prefWidth="92.0" text="destination_reclamation" />
+                                    <TableColumn fx:id="col_description_reclamation" prefWidth="171.0" text="description_reclamation" />
+                                    <TableColumn fx:id="col_type_reclamation" prefWidth="171.0" text="type_reclamation" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btn_ajout_reclamation" layoutX="732.0" layoutY="416.0" mnemonicParsing="false" onAction="#ajouter_reclamation" prefHeight="32.0" prefWidth="84.0" stylesheets="@../css/style.css" text="Ajouter" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="14.0" />
+                                 </font></Button>
+                              <Label layoutX="35.0" layoutY="21.0" text="Consulter" textFill="#251919">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="180.0" layoutY="21.0" text="Reclamation" textFill="#ff6601">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="26.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtdescription_reclamation" layoutX="490.0" layoutY="362.0" prefHeight="141.0" prefWidth="218.0" />
+                              <Label layoutX="85.0" layoutY="329.0" text="nom_reclamation">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="11.0" />
+                                 </font></Label>
+                              <TextField fx:id="txtnom_reclamation" layoutX="135.0" layoutY="354.0" prefHeight="35.0" prefWidth="232.0" promptText="nom_reclamation">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="444.0" layoutY="329.0" text="Description" textFill="#1b1a1a">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="77.0" layoutY="398.0" text="prenom_reclamation">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="11.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtprenom_reclamation" layoutX="135.0" layoutY="415.0" prefHeight="35.0" prefWidth="232.0" promptText="prenom_reclamation">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="77.0" layoutY="460.0" text="destination_reclamation">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="11.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtdestination_reclamation" layoutX="135.0" layoutY="483.0" prefHeight="35.0" prefWidth="232.0" promptText="destination_reclamation">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Button layoutX="732.0" layoutY="468.0" mnemonicParsing="false" onAction="#annuler_reclamation" prefHeight="32.0" prefWidth="84.0" stylesheets="@../css/style.css" text="Annuler" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="588.0" layoutY="24.0" mnemonicParsing="false" onAction="#afficher_reclamation" prefHeight="32.0" prefWidth="110.0" stylesheets="@../css/style.css" text="Afficher" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="79.0" fitWidth="78.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo_projet.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="840.0" layoutY="14.0" mnemonicParsing="false" onAction="#arabe" stylesheets="@style.css" text="عربية" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <VBox layoutX="-60.0" prefHeight="616.0" prefWidth="132.0" style="-fx-background-color: #131022; -fx-background-radius: 15 0 0 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-60.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btn_Reclamation" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleClicks" prefHeight="66.0" prefWidth="74.0" stylesheets="@../css/style%20-%20Copie.css" text="Reclamation" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/signaling.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_Sign_Out" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleClicks" prefHeight="66.0" prefWidth="74.0" stylesheets="@../css/style%20-%20Copie.css" text="Sign Out" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/signs.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fx:id="image_user" fitHeight="27.0" fitWidth="180.0" layoutX="766.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/BOUTON%20RECLAMATION_0.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username" layoutX="700.0" layoutY="20.0" prefHeight="27.0" prefWidth="149.0" text="Client">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutY="580.0" mnemonicParsing="false" onAction="#retour" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: #B03314;" stylesheets="@style.css" text="Retour">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>

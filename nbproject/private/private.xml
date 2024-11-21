@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/PDFGenerator.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/LoginFXMLController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/services/ParticipationService.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/entities/evenement.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/DemandefFXMLController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/services/BCrypt.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/UserFXMLController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/AjouterEvenementController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/EvenementController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/FrontController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/AfficherEvenementController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/ControleSaisieTextFields.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/entities/Rendezvous.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/services/UserController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/entities/User.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/ForgotPasswordController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/AfficherParticipationController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/controllers/FrontCrontroller.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/AcceuilfrontController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/ProfilFXMLController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/SendEmailController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/entities/BadWords.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/entities/participation.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/AjouterAvisController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/HomeController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/controllers/admin_reclamationController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/utils/MyDB.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/MapController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/RegisterFXMLController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/DemandeFXMLController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/RendezfrontController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/Service/reclamation_Service.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/acceuil.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/controllers/Front1Crontroller.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/controllers/admin_reponseController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/services/ServiceRendezvous.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/services/EvenementService.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/AcceuilbackController.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/utils/MyConnexion.java</file>
+            <file>file:/C:/Users/octanet/Desktop/integration%20(11)/integration/src/gui/ResetPassword.fxml</file>
+        </group>
+    </open-files>
+</project-private>

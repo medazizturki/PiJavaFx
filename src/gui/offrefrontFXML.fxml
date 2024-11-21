@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="874.0" prefWidth="1283.0" style="-fx-background-color: #05335e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OffrefrontFXMLController">
+   <children>
+      <Button layoutX="870.0" layoutY="561.0" mnemonicParsing="false" onAction="#postuler" text="postuler" />
+      <VBox layoutX="-26.0" layoutY="-10.0" prefHeight="1010.0" prefWidth="358.0" style="-fx-background-color: #F9FDFD;">
+         <children>
+            <AnchorPane prefHeight="1009.0" prefWidth="358.0" style="-fx-background-image: #2B3977;">
+               <children>
+                  <Pane fx:id="nn" layoutX="56.0" layoutY="37.0" prefHeight="81.0" prefWidth="166.0" style="-fx-background-image: #6A687F;" styleClass="fruit-item" stylesheets="@../../../../Downloads/SOUND-ON-Desktop/src/values/style.css" />
+                  <Pane fx:id="nn1" layoutX="56.0" layoutY="153.0" prefHeight="81.0" prefWidth="166.0" style="-fx-background-image: #6A687F;" styleClass="fruit-item" stylesheets="@../../../../Downloads/SOUND-ON-Desktop/src/values/style.css" />
+                  <HBox alignment="CENTER" layoutX="35.0" layoutY="132.0" prefHeight="62.0" prefWidth="289.0" styleClass="button" stylesheets="@../../../../Downloads/SOUND-ON-Desktop/src/values/style.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="49.0" prefWidth="121.0">
+                           <children>
+                              <Label prefHeight="29.0" prefWidth="190.0" text="postuler maintenant" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="49.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@2309912.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="85.0" layoutY="28.0" prefHeight="64.0" prefWidth="200.0" style="-fx-background-color: #E0DFF0;" styleClass="search-button" stylesheets="@../../../../Downloads/SOUND-ON-Desktop/src/values/style.css">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="51.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" x="100.0" y="2.0">
+                           <image>
+                              <Image url="@188427.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="42.0" prefWidth="110.0" text="    ado_doc" textFill="#2f62ee">
+                           <font>
+                              <Font name="Harrington" size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="40.0" />
+                     </padding>
+                  </HBox>
+                  <Button layoutX="80.0" layoutY="634.0" mnemonicParsing="false" onAction="#postuler" prefHeight="48.0" prefWidth="211.0" text="postuler " />
+                  <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="98.0" layoutY="641.0">
+                     <image>
+                        <Image url="@188427.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Evenementb" layoutX="98.0" layoutY="234.0" mnemonicParsing="false" onAction="#Evenement" prefHeight="40.0" prefWidth="149.0" text="Evenement" textFill="#1b1a1a">
+                     <font>
+                        <Font name="Cambria" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Rendezvousb" layoutX="98.0" layoutY="297.0" mnemonicParsing="false" onAction="#Rendezvous" prefHeight="40.0" prefWidth="149.0" text="Rendez-vous">
+                     <font>
+                        <Font name="Cambria" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Reservationb" layoutX="98.0" layoutY="363.0" mnemonicParsing="false" onAction="#Profil" prefHeight="40.0" prefWidth="149.0" text="Reservation">
+                     <font>
+                        <Font name="Cambria" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Ressourceb" layoutX="98.0" layoutY="429.0" mnemonicParsing="false" onAction="#Ressource" prefHeight="40.0" prefWidth="149.0" text="Ressource">
+                     <font>
+                        <Font name="Cambria" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Offreb" layoutX="98.0" layoutY="494.0" mnemonicParsing="false" onAction="#offre" prefHeight="40.0" prefWidth="149.0" text="Offre">
+                     <font>
+                        <Font name="Cambria" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Reclamation1" layoutX="98.0" layoutY="558.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="17.0" prefWidth="149.0" text="Reclamation">
+                     <font>
+                        <Font name="Cambria" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <HBox layoutX="264.0" layoutY="167.0" prefHeight="381.0" prefWidth="642.0" />
+      <ScrollPane layoutX="372.0" layoutY="125.0" prefHeight="841.0" prefWidth="878.0" style="-fx-background-color: #FFFCFC;">
+         <content>
+            <GridPane fx:id="gridEvent" prefHeight="567.0" prefWidth="881.0" style="-fx-background-color: #FFFCFC;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="383.1999877929687" minHeight="-Infinity" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" layoutX="585.0" layoutY="31.0" prefHeight="57.0" prefWidth="430.0" stylesheets="@../../../../Downloads/SOUND-ON-Desktop/src/values/style.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="49.0" prefWidth="121.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@3487352.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label prefHeight="37.0" prefWidth="360.0" text="Nos offres d'emploi " textFill="#051683">
+               <font>
+                  <Font name="Berlin Sans FB" size="33.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="button" />
+         </styleClass>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FrontController">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="1000.0" layoutX="-1.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #05335e;" />
+      <Button fx:id="btnrendez" layoutX="263.0" layoutY="55.0" mnemonicParsing="false" onAction="#ajouterrendezvous" prefHeight="75.0" prefWidth="291.0" style="-fx-background-radius: 30;" text="PRENDRE RENDEZ-VOUS">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableRendez" layoutX="246.0" layoutY="296.0" onMouseClicked="#choisirRendezvous" prefHeight="160.0" prefWidth="508.0">
+         <columns>
+            <TableColumn fx:id="nomTV" prefWidth="99.99996948242188" text="nom" />
+            <TableColumn fx:id="prenomTV" prefWidth="67.20001220703125" text="prenom" />
+            <TableColumn fx:id="lieuTV" prefWidth="119.20002746582031" text="lieu" />
+            <TableColumn fx:id="emailTv" prefWidth="129.60003662109375" text="email" />
+            <TableColumn fx:id="dateTV" prefWidth="88.800048828125" text="date" />
+            <TableColumn fx:id="useridTV" prefWidth="132.79998779296875" text="user id" />
+         </columns>
+      </TableView>
+      <Button fx:id="Evenementb" layoutX="45.0" layoutY="194.0" mnemonicParsing="false" onAction="#Evenement" prefHeight="40.0" prefWidth="149.0" text="Evenement" textFill="#1b1a1a">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Rendezvousb" layoutX="45.0" layoutY="250.0" mnemonicParsing="false" onAction="#Rendezvous" prefHeight="40.0" prefWidth="149.0" text="Rendez-vous">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reservationb" layoutX="45.0" layoutY="304.0" mnemonicParsing="false" onAction="#Profil" prefHeight="40.0" prefWidth="149.0" text="Reservation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Ressourceb" layoutX="45.0" layoutY="358.0" mnemonicParsing="false" onAction="#Ressource" prefHeight="40.0" prefWidth="149.0" text="Ressource">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Offreb" layoutX="45.0" layoutY="413.0" mnemonicParsing="false" onAction="#offre" prefHeight="40.0" prefWidth="149.0" text="Offre">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reclamation1" layoutX="45.0" layoutY="470.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="17.0" prefWidth="149.0" text="Reclamation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="82.0" fitWidth="108.0" layoutX="79.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@334882197_6506967289321661_9163013156950975212_n.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="33.0" layoutY="24.0" mnemonicParsing="false" onAction="#Retour" prefHeight="27.0" prefWidth="83.0" text="Retour" />
+   </children>
+</AnchorPane>

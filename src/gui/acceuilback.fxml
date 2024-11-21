@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="650.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AcceuilbackController">
+    <stylesheets>
+        <URL value="@acceuilback.css" />
+    </stylesheets>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05335e" height="600.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="302.0" />
+      <Button fx:id="Evenementb" layoutX="49.0" layoutY="120.0" mnemonicParsing="false" onAction="#Evenementb" prefHeight="37.0" prefWidth="182.0" text="         Evenement" textFill="#1b1a1a">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Rendezvousb" layoutX="49.0" layoutY="181.0" mnemonicParsing="false" onAction="#Rendezvousb" prefHeight="40.0" prefWidth="182.0" text="        Rendez-vous">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reservationb" layoutX="49.0" layoutY="241.0" mnemonicParsing="false" onAction="#Reservationb" prefHeight="30.0" prefWidth="182.0" text="       Reservation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Ressourceb" layoutX="49.0" layoutY="299.0" mnemonicParsing="false" onAction="#Ressourceb" prefHeight="30.0" prefWidth="182.0" text="   Ressource">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Offreb" layoutX="49.0" layoutY="357.0" mnemonicParsing="false" onAction="#Offreb" prefHeight="30.0" prefWidth="182.0" text="Offre">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reclamation" layoutX="49.0" layoutY="418.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="30.0" prefWidth="182.0" text="    Reclamation">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reponse" layoutX="49.0" layoutY="478.0" mnemonicParsing="false" onAction="#Reponse" prefHeight="30.0" prefWidth="182.0" text="Reponse">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="59.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reservation.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="59.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ambulance%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="59.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@avertissement.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="59.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@rendez-vous.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="59.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@offrir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="59.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@question-et-reponse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="59.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fete.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="374.0" layoutY="357.0" prefHeight="48.0" prefWidth="503.0" stylesheets="@../../../SOUND-ON-Desktop/src/values/style.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="49.0" prefWidth="121.0">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@3487352.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label prefHeight="37.0" prefWidth="360.0" text="BIENVENUE A ADO-DOC" textFill="#051683">
+               <font>
+                  <Font name="Berlin Sans FB" size="33.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="button" />
+         </styleClass>
+      </HBox>
+      <ImageView fitHeight="82.0" fitWidth="108.0" layoutX="99.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@334882197_6506967289321661_9163013156950975212_n.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="416.0" fitWidth="652.0" layoutX="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg_1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Reponse1" layoutX="49.0" layoutY="532.0" mnemonicParsing="false" onAction="#user" prefHeight="40.0" prefWidth="182.0" text="user">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="63.0" layoutY="541.0">
+         <image>
+            <Image url="@profil-de-lutilisateur.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
